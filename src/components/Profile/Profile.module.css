@@ -6,12 +6,14 @@
   background-color: whitesmoke;
   outline: 2px solid black;
   overflow: hidden;
+  margin-top: 20px;
 }
 .avatar {
   display: block;
   border-radius: 50%;
   margin: 0 auto;
   background-color: slategrey;
+  margin-bottom: 10px;
 }
 .name {
   text-align: center;
@@ -23,12 +25,14 @@
   color: gray;
   text-align: center;
 }
+.description:last-child {
+  margin-bottom: 10px;
+}
 .list {
   list-style: none;
   display: flex;
   padding: 0;
   background-color: gainsboro;
-  margin: 0;
 }
 .item {
   width: calc(100% / 3);
