@@ -1,6 +1,14 @@
+import PropTypes from "prop-types";
 import css from "./Profile.module.css";
+
 const Profile = ({ name, tag, location, image, stats }) => {
+  stats.PropTypes = {
+    followers: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
+  };
   const { followers, views, likes } = stats;
+  console.log(PropTypes);
   return (
     <div className={css.wrapper}>
       <div>

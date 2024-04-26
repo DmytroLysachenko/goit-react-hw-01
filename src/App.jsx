@@ -2,7 +2,6 @@ import Profile from "./components/Profile/Profile";
 import userData from "./userData.json";
 
 function App() {
-  console.log(userData);
   return (
     <>
       <Profile
