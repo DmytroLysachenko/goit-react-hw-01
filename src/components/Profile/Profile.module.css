@@ -4,7 +4,7 @@
   border-radius: 10px;
   margin: 0 auto;
   background-color: whitesmoke;
-  outline: 2px solid black;
+  border: 2px solid black;
   overflow: hidden;
   margin-top: 20px;
 }
@@ -33,14 +33,17 @@
   display: flex;
   padding: 0;
   background-color: gainsboro;
+  border-top: 1px solid gray;
 }
 .item {
   width: calc(100% / 3);
   display: flex;
   flex-direction: column;
   padding: 10px 0;
-  border-top: 1px solid gray;
   border-right: 1px solid gray;
+  &:last-child {
+    border-right: none;
+  }
 }
 .title {
   font-weight: 500;
